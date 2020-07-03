@@ -120,30 +120,8 @@ F 3 "~" H 1300 1800 50  0001 C CNN
 	1    1300 1800
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5F04C82D
-P 1950 2500
-F 0 "R3" V 2146 2500 50  0000 C CNN
-F 1 "10k" V 2055 2500 50  0000 C CNN
-F 2 "" H 1950 2500 50  0001 C CNN
-F 3 "~" H 1950 2500 50  0001 C CNN
-	1    1950 2500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2250 1000 2250 1150
-$Comp
-L power:+5V #PWR?
-U 1 1 5F04BA07
-P 2250 1000
-F 0 "#PWR?" H 2250 850 50  0001 C CNN
-F 1 "+5V" H 2265 1173 50  0000 C CNN
-F 2 "" H 2250 1000 50  0001 C CNN
-F 3 "" H 2250 1000 50  0001 C CNN
-	1    2250 1000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5F04A175
@@ -253,6 +231,187 @@ F 3 "" H 2950 1100 50  0001 C CNN
 	1    2950 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 700  650  0    50   ~ 0
+Text Notes 950  750  0    50   ~ 0
 MCU
+$Comp
+L power:+5V #PWR?
+U 1 1 5F04BA07
+P 2250 1000
+F 0 "#PWR?" H 2250 850 50  0001 C CNN
+F 1 "+5V" H 2265 1173 50  0000 C CNN
+F 2 "" H 2250 1000 50  0001 C CNN
+F 3 "" H 2250 1000 50  0001 C CNN
+	1    2250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5EFFD535
+P 2150 2950
+F 0 "C3" H 2242 2996 50  0000 L CNN
+F 1 "1uF" H 2242 2905 50  0000 L CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "~" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFFEC28
+P 2150 3150
+F 0 "#PWR?" H 2150 2900 50  0001 C CNN
+F 1 "GND" H 2155 2977 50  0000 C CNN
+F 2 "" H 2150 3150 50  0001 C CNN
+F 3 "" H 2150 3150 50  0001 C CNN
+	1    2150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2800 2150 2800
+Wire Wire Line
+	2150 2800 2150 2850
+Wire Wire Line
+	2150 3050 2150 3150
+$Comp
+L Device:R_Small R3
+U 1 1 5F001B6F
+P 1850 2600
+F 0 "R3" V 1950 2600 50  0000 C CNN
+F 1 "22ohm" V 2050 2600 50  0000 C CNN
+F 2 "" H 1850 2600 50  0001 C CNN
+F 3 "~" H 1850 2600 50  0001 C CNN
+	1    1850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5F004BAC
+P 1850 2500
+F 0 "R4" V 1654 2500 50  0000 C CNN
+F 1 "22ohm" V 1745 2500 50  0000 C CNN
+F 2 "" H 1850 2500 50  0001 C CNN
+F 3 "~" H 1850 2500 50  0001 C CNN
+	1    1850 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2600 1950 2600
+Wire Wire Line
+	2450 2500 1950 2500
+$Comp
+L Device:C_Small C4
+U 1 1 5F006977
+P 1450 6600
+F 0 "C4" H 1542 6646 50  0000 L CNN
+F 1 "0.1uF" H 1542 6555 50  0000 L CNN
+F 2 "" H 1450 6600 50  0001 C CNN
+F 3 "~" H 1450 6600 50  0001 C CNN
+	1    1450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5F00730F
+P 1900 6600
+F 0 "C5" H 1992 6646 50  0000 L CNN
+F 1 "0.1uF" H 1992 6555 50  0000 L CNN
+F 2 "" H 1900 6600 50  0001 C CNN
+F 3 "~" H 1900 6600 50  0001 C CNN
+	1    1900 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5F0078BE
+P 2350 6600
+F 0 "C6" H 2442 6646 50  0000 L CNN
+F 1 "0.1uF" H 2442 6555 50  0000 L CNN
+F 2 "" H 2350 6600 50  0001 C CNN
+F 3 "~" H 2350 6600 50  0001 C CNN
+	1    2350 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5F007D2B
+P 2800 6600
+F 0 "C7" H 2708 6554 50  0000 R CNN
+F 1 "10uF" H 2708 6645 50  0000 R CNN
+F 2 "" H 2800 6600 50  0001 C CNN
+F 3 "~" H 2800 6600 50  0001 C CNN
+	1    2800 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F008F2B
+P 2150 6300
+F 0 "#PWR?" H 2150 6150 50  0001 C CNN
+F 1 "+5V" H 2165 6473 50  0000 C CNN
+F 2 "" H 2150 6300 50  0001 C CNN
+F 3 "" H 2150 6300 50  0001 C CNN
+	1    2150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F00B1AD
+P 2150 6950
+F 0 "#PWR?" H 2150 6700 50  0001 C CNN
+F 1 "GND" H 2155 6777 50  0000 C CNN
+F 2 "" H 2150 6950 50  0001 C CNN
+F 3 "" H 2150 6950 50  0001 C CNN
+	1    2150 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6500 1450 6400
+Wire Wire Line
+	1450 6400 1900 6400
+Wire Wire Line
+	2150 6400 2150 6300
+Wire Wire Line
+	1900 6500 1900 6400
+Connection ~ 1900 6400
+Wire Wire Line
+	1900 6400 2150 6400
+Wire Wire Line
+	2150 6400 2350 6400
+Wire Wire Line
+	2800 6400 2800 6500
+Connection ~ 2150 6400
+Wire Wire Line
+	2350 6500 2350 6400
+Connection ~ 2350 6400
+Wire Wire Line
+	2350 6400 2800 6400
+Wire Wire Line
+	2800 6700 2800 6800
+Wire Wire Line
+	2800 6800 2350 6800
+Wire Wire Line
+	1450 6800 1450 6700
+Wire Wire Line
+	1900 6700 1900 6800
+Connection ~ 1900 6800
+Wire Wire Line
+	1900 6800 1450 6800
+Wire Wire Line
+	2350 6700 2350 6800
+Connection ~ 2350 6800
+Wire Wire Line
+	2350 6800 2150 6800
+Wire Wire Line
+	2150 6800 2150 6950
+Connection ~ 2150 6800
+Wire Wire Line
+	2150 6800 1900 6800
+Text Notes 1050 5950 0    50   ~ 0
+Decoupling Capacitors
+Wire Notes Line
+	500  5350 4750 5350
+Wire Notes Line
+	4750 5350 4750 500 
+Wire Notes Line
+	3650 5350 3650 7700
 $EndSCHEMATC
