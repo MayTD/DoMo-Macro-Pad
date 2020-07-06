@@ -128,6 +128,18 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
+# keebio_Hole
+#
+DEF keebio_Hole H 0 40 Y Y 1 F N
+F0 "H" 0 -50 60 H V C CNN
+F1 "keebio_Hole" 0 50 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+C 0 0 158 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # keebio_ProMicro
 #
 DEF keebio_ProMicro U 0 40 Y Y 1 F N

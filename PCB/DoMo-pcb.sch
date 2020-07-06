@@ -263,108 +263,6 @@ Text Notes 3000 750  0    50   ~ 0
 MCU
 Wire Notes Line
 	6950 5600 6950 500 
-NoConn ~ 5500 3100
-NoConn ~ 4100 3200
-NoConn ~ 4100 3100
-NoConn ~ 4100 3000
-NoConn ~ 4100 2500
-NoConn ~ 5500 2400
-NoConn ~ 5500 2800
-Wire Wire Line
-	4100 2400 4050 2400
-Text GLabel 5550 3400 2    50   Input ~ 0
-C2
-Text GLabel 5550 3300 2    50   Input ~ 0
-C1
-Text GLabel 5550 3200 2    50   Input ~ 0
-C0
-Wire Wire Line
-	4100 3500 4050 3500
-Wire Wire Line
-	4100 3400 4050 3400
-Text GLabel 4050 3500 0    50   Input ~ 0
-R2
-Text GLabel 4050 3400 0    50   Input ~ 0
-R1
-Wire Wire Line
-	4100 3300 4050 3300
-Text GLabel 4050 3300 0    50   Input ~ 0
-R0
-Wire Wire Line
-	5550 3000 5500 3000
-Wire Wire Line
-	5550 2900 5500 2900
-Text GLabel 5550 3000 2    50   Input ~ 0
-EN1
-Text GLabel 5550 2900 2    50   Input ~ 0
-EN0
-Text GLabel 4050 2400 0    50   Input ~ 0
-LEDS
-Wire Wire Line
-	4100 2900 4050 2900
-Text GLabel 4050 2900 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	4100 2800 4050 2800
-Text GLabel 4050 2800 0    50   Input ~ 0
-SDA
-Connection ~ 4100 2600
-Wire Wire Line
-	4100 2600 4050 2600
-Wire Wire Line
-	5550 2500 5500 2500
-$Comp
-L power:GND #PWR0107
-U 1 1 5F039D77
-P 5550 2500
-F 0 "#PWR0107" H 5550 2250 50  0001 C CNN
-F 1 "GND" V 5555 2372 50  0000 R CNN
-F 2 "" H 5550 2500 50  0001 C CNN
-F 3 "" H 5550 2500 50  0001 C CNN
-	1    5550 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5550 2700 5500 2700
-$Comp
-L power:VCC #PWR0108
-U 1 1 5F0416A0
-P 5550 2700
-F 0 "#PWR0108" H 5550 2550 50  0001 C CNN
-F 1 "VCC" V 5565 2828 50  0000 L CNN
-F 2 "" H 5550 2700 50  0001 C CNN
-F 3 "" H 5550 2700 50  0001 C CNN
-	1    5550 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5550 2600 5500 2600
-Text GLabel 5550 2600 2    50   Input ~ 0
-RST
-Wire Wire Line
-	4100 2700 4100 2600
-$Comp
-L power:GND #PWR0109
-U 1 1 5F0376E2
-P 4050 2600
-F 0 "#PWR0109" H 4050 2350 50  0001 C CNN
-F 1 "GND" V 4055 2472 50  0000 R CNN
-F 2 "" H 4050 2600 50  0001 C CNN
-F 3 "" H 4050 2600 50  0001 C CNN
-	1    4050 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L keebio:ProMicro U0
-U 1 1 5F031D44
-P 4800 2950
-F 0 "U0" H 4800 3787 60  0000 C CNN
-F 1 "ProMicro" H 4800 3681 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" V 5850 450 60  0001 C CNN
-F 3 "" V 5850 450 60  0001 C CNN
-	1    4800 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8650 3800 7850 3800
 Connection ~ 8650 3100
@@ -648,8 +546,6 @@ F 3 "~" H 8850 3050 50  0001 C CNN
 	1    8850 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5550 3500 2    50   Input ~ 0
-C3
 Text GLabel 8450 2400 1    50   Input ~ 0
 C0
 Wire Wire Line
@@ -669,14 +565,6 @@ Connection ~ 9650 3550
 Wire Wire Line
 	9050 3550 9050 4250
 Connection ~ 9050 3550
-Wire Wire Line
-	5550 3200 5500 3200
-Wire Wire Line
-	5550 3300 5500 3300
-Wire Wire Line
-	5550 3400 5500 3400
-Wire Wire Line
-	5500 3500 5550 3500
 $Comp
 L Device:Rotary_Encoder_Switch SW1
 U 1 1 5F045D84
@@ -686,6 +574,166 @@ F 1 "Rotary_Encoder_Switch" H 1650 3276 50  0000 C CNN
 F 2 "Keebio-Parts:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 1500 3160 50  0001 C CNN
 F 3 "~" H 1650 3260 50  0001 C CNN
 	1    1650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H0
+U 1 1 5F025C67
+P 3500 4750
+F 0 "H0" H 3686 4803 60  0000 L CNN
+F 1 "Hole" H 3686 4697 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 3500 4750 60  0001 C CNN
+F 3 "" H 3500 4750 60  0001 C CNN
+	1    3500 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 3050 4150 0    50   ~ 0
+MOUNTING HOLES
+Wire Notes Line
+	2850 3850 6900 3850
+NoConn ~ 5500 2250
+NoConn ~ 4100 2350
+NoConn ~ 4100 2250
+NoConn ~ 4100 2150
+NoConn ~ 4100 1650
+NoConn ~ 5500 1550
+NoConn ~ 5500 1950
+Wire Wire Line
+	4100 1550 4050 1550
+Text GLabel 5550 2550 2    50   Input ~ 0
+C2
+Text GLabel 5550 2450 2    50   Input ~ 0
+C1
+Text GLabel 5550 2350 2    50   Input ~ 0
+C0
+Wire Wire Line
+	4100 2650 4050 2650
+Wire Wire Line
+	4100 2550 4050 2550
+Text GLabel 4050 2650 0    50   Input ~ 0
+R2
+Text GLabel 4050 2550 0    50   Input ~ 0
+R1
+Wire Wire Line
+	4100 2450 4050 2450
+Text GLabel 4050 2450 0    50   Input ~ 0
+R0
+Wire Wire Line
+	5550 2150 5500 2150
+Wire Wire Line
+	5550 2050 5500 2050
+Text GLabel 5550 2150 2    50   Input ~ 0
+EN1
+Text GLabel 5550 2050 2    50   Input ~ 0
+EN0
+Text GLabel 4050 1550 0    50   Input ~ 0
+LEDS
+Wire Wire Line
+	4100 2050 4050 2050
+Text GLabel 4050 2050 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4100 1950 4050 1950
+Text GLabel 4050 1950 0    50   Input ~ 0
+SDA
+Connection ~ 4100 1750
+Wire Wire Line
+	4100 1750 4050 1750
+Wire Wire Line
+	5550 1650 5500 1650
+$Comp
+L power:GND #PWR0107
+U 1 1 5F039D77
+P 5550 1650
+F 0 "#PWR0107" H 5550 1400 50  0001 C CNN
+F 1 "GND" V 5555 1522 50  0000 R CNN
+F 2 "" H 5550 1650 50  0001 C CNN
+F 3 "" H 5550 1650 50  0001 C CNN
+	1    5550 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 1850 5500 1850
+$Comp
+L power:VCC #PWR0108
+U 1 1 5F0416A0
+P 5550 1850
+F 0 "#PWR0108" H 5550 1700 50  0001 C CNN
+F 1 "VCC" V 5565 1978 50  0000 L CNN
+F 2 "" H 5550 1850 50  0001 C CNN
+F 3 "" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 1750 5500 1750
+Text GLabel 5550 1750 2    50   Input ~ 0
+RST
+Wire Wire Line
+	4100 1850 4100 1750
+$Comp
+L power:GND #PWR0109
+U 1 1 5F0376E2
+P 4050 1750
+F 0 "#PWR0109" H 4050 1500 50  0001 C CNN
+F 1 "GND" V 4055 1622 50  0000 R CNN
+F 2 "" H 4050 1750 50  0001 C CNN
+F 3 "" H 4050 1750 50  0001 C CNN
+	1    4050 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L keebio:ProMicro U0
+U 1 1 5F031D44
+P 4800 2100
+F 0 "U0" H 4800 2937 60  0000 C CNN
+F 1 "ProMicro" H 4800 2831 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" V 5850 -400 60  0001 C CNN
+F 3 "" V 5850 -400 60  0001 C CNN
+	1    4800 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 2650 2    50   Input ~ 0
+C3
+Wire Wire Line
+	5550 2350 5500 2350
+Wire Wire Line
+	5550 2450 5500 2450
+Wire Wire Line
+	5550 2550 5500 2550
+Wire Wire Line
+	5500 2650 5550 2650
+$Comp
+L keebio:Hole H1
+U 1 1 5F03A4BC
+P 4350 4750
+F 0 "H1" H 4536 4803 60  0000 L CNN
+F 1 "Hole" H 4536 4697 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 4350 4750 60  0001 C CNN
+F 3 "" H 4350 4750 60  0001 C CNN
+	1    4350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H2
+U 1 1 5F03ADC0
+P 5200 4750
+F 0 "H2" H 5386 4803 60  0000 L CNN
+F 1 "Hole" H 5386 4697 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 5200 4750 60  0001 C CNN
+F 3 "" H 5200 4750 60  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H3
+U 1 1 5F03BD3F
+P 6050 4750
+F 0 "H3" H 6236 4803 60  0000 L CNN
+F 1 "Hole" H 6236 4697 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 6050 4750 60  0001 C CNN
+F 3 "" H 6050 4750 60  0001 C CNN
+	1    6050 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
