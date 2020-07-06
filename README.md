@@ -5,7 +5,6 @@ It's a straightforward design with a straightforward idea. I originally designed
 
 ## Features
 * QMK Firmware Support
-* USB-C
-* MX & ALPS
+* MX Hot Swap
 * OLED Screen
 * Rotary Encoder
