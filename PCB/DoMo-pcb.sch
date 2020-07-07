@@ -99,39 +99,12 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3750 6375 50  0001 
 	1    3650 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L LED:WS2812B LED3
-U 1 1 5F05ECBC
-P 4700 6750
-F 0 "LED3" H 5044 6796 50  0000 L CNN
-F 1 "WS2812B" H 5044 6705 50  0000 L CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 4750 6450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4800 6375 50  0001 L TNN
-	1    4700 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B LED4
-U 1 1 5F05F745
-P 5750 6750
-F 0 "LED4" H 6094 6796 50  0000 L CNN
-F 1 "WS2812B" H 6094 6705 50  0000 L CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 5800 6450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5850 6375 50  0001 L TNN
-	1    5750 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 6750 1150 6750
 Wire Wire Line
 	1850 6750 2300 6750
 Wire Wire Line
 	2900 6750 3350 6750
-Wire Wire Line
-	3950 6750 4400 6750
-Wire Wire Line
-	5000 6750 5450 6750
-NoConn ~ 6050 6750
 $Comp
 L power:GND #PWR0103
 U 1 1 5F065591
@@ -144,11 +117,6 @@ F 3 "" H 1550 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 7050 4700 7050
-Wire Wire Line
-	3650 7050 4700 7050
-Connection ~ 4700 7050
-Wire Wire Line
 	3650 7050 2600 7050
 Wire Wire Line
 	1550 7050 1550 7250
@@ -157,17 +125,12 @@ Connection ~ 1550 7050
 Connection ~ 2600 7050
 Wire Wire Line
 	2600 7050 1550 7050
-Wire Wire Line
-	5750 6450 4700 6450
 Connection ~ 2600 6450
 Wire Wire Line
 	2600 6450 1550 6450
 Connection ~ 3650 6450
 Wire Wire Line
 	3650 6450 2600 6450
-Connection ~ 4700 6450
-Wire Wire Line
-	4700 6450 3650 6450
 $Comp
 L power:VCC #PWR0104
 U 1 1 5F06A38A
@@ -592,32 +555,21 @@ MOUNTING HOLES
 Wire Notes Line
 	2850 3850 6900 3850
 NoConn ~ 5500 2250
-NoConn ~ 4100 2350
-NoConn ~ 4100 2250
-NoConn ~ 4100 2150
 NoConn ~ 4100 1650
 NoConn ~ 5500 1550
 NoConn ~ 5500 1950
 Wire Wire Line
 	4100 1550 4050 1550
-Text GLabel 5550 2550 2    50   Input ~ 0
+Text GLabel 4050 2550 0    50   Input ~ 0
 C2
-Text GLabel 5550 2450 2    50   Input ~ 0
+Text GLabel 4050 2450 0    50   Input ~ 0
 C1
-Text GLabel 5550 2350 2    50   Input ~ 0
-C0
 Wire Wire Line
 	4100 2650 4050 2650
 Wire Wire Line
 	4100 2550 4050 2550
-Text GLabel 4050 2650 0    50   Input ~ 0
-R2
-Text GLabel 4050 2550 0    50   Input ~ 0
-R1
 Wire Wire Line
 	4100 2450 4050 2450
-Text GLabel 4050 2450 0    50   Input ~ 0
-R0
 Wire Wire Line
 	5550 2150 5500 2150
 Wire Wire Line
@@ -634,8 +586,6 @@ Text GLabel 4050 2050 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	4100 1950 4050 1950
-Text GLabel 4050 1950 0    50   Input ~ 0
-SDA
 Connection ~ 4100 1750
 Wire Wire Line
 	4100 1750 4050 1750
@@ -693,14 +643,8 @@ F 3 "" V 5850 -400 60  0001 C CNN
 	1    4800 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5550 2650 2    50   Input ~ 0
+Text GLabel 4050 2650 0    50   Input ~ 0
 C3
-Wire Wire Line
-	5550 2350 5500 2350
-Wire Wire Line
-	5550 2450 5500 2450
-Wire Wire Line
-	5550 2550 5500 2550
 Wire Wire Line
 	5500 2650 5550 2650
 $Comp
@@ -736,4 +680,41 @@ F 3 "" H 6050 4750 60  0001 C CNN
 	1    6050 4750
 	1    0    0    -1  
 $EndComp
+Text GLabel 4050 1950 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	5550 2450 5500 2450
+Wire Wire Line
+	5550 2550 5500 2550
+Text GLabel 5550 2650 2    50   Input ~ 0
+R2
+Text GLabel 5550 2550 2    50   Input ~ 0
+R1
+Text GLabel 5550 2450 2    50   Input ~ 0
+R0
+NoConn ~ 4100 2250
+NoConn ~ 4100 2150
+Text GLabel 5550 2350 2    50   Input ~ 0
+C0
+Wire Wire Line
+	5500 2350 5550 2350
+NoConn ~ 4100 2350
+Wire Wire Line
+	3950 6750 4400 6750
+Wire Wire Line
+	4700 6450 3650 6450
+Wire Wire Line
+	3650 7050 4700 7050
+$Comp
+L LED:WS2812B LED3
+U 1 1 5F05ECBC
+P 4700 6750
+F 0 "LED3" H 5044 6796 50  0000 L CNN
+F 1 "WS2812B" H 5044 6705 50  0000 L CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 4750 6450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4800 6375 50  0001 L TNN
+	1    4700 6750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 6750
 $EndSCHEMATC

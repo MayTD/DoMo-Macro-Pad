@@ -582,7 +582,7 @@ U 1 1 5F025C67
 P 3500 4750
 F 0 "H0" H 3686 4803 60  0000 L CNN
 F 1 "Hole" H 3686 4697 60  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965" H 3500 4750 60  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 3500 4750 60  0001 C CNN
 F 3 "" H 3500 4750 60  0001 C CNN
 	1    3500 4750
 	1    0    0    -1  
@@ -592,32 +592,21 @@ MOUNTING HOLES
 Wire Notes Line
 	2850 3850 6900 3850
 NoConn ~ 5500 2250
-NoConn ~ 4100 2350
-NoConn ~ 4100 2250
-NoConn ~ 4100 2150
 NoConn ~ 4100 1650
 NoConn ~ 5500 1550
 NoConn ~ 5500 1950
 Wire Wire Line
 	4100 1550 4050 1550
-Text GLabel 5550 2550 2    50   Input ~ 0
+Text GLabel 4050 2550 0    50   Input ~ 0
 C2
-Text GLabel 5550 2450 2    50   Input ~ 0
+Text GLabel 4050 2450 0    50   Input ~ 0
 C1
-Text GLabel 5550 2350 2    50   Input ~ 0
-C0
 Wire Wire Line
 	4100 2650 4050 2650
 Wire Wire Line
 	4100 2550 4050 2550
-Text GLabel 4050 2650 0    50   Input ~ 0
-R2
-Text GLabel 4050 2550 0    50   Input ~ 0
-R1
 Wire Wire Line
 	4100 2450 4050 2450
-Text GLabel 4050 2450 0    50   Input ~ 0
-R0
 Wire Wire Line
 	5550 2150 5500 2150
 Wire Wire Line
@@ -634,8 +623,6 @@ Text GLabel 4050 2050 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	4100 1950 4050 1950
-Text GLabel 4050 1950 0    50   Input ~ 0
-SDA
 Connection ~ 4100 1750
 Wire Wire Line
 	4100 1750 4050 1750
@@ -693,14 +680,8 @@ F 3 "" V 5850 -400 60  0001 C CNN
 	1    4800 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5550 2650 2    50   Input ~ 0
+Text GLabel 4050 2650 0    50   Input ~ 0
 C3
-Wire Wire Line
-	5550 2350 5500 2350
-Wire Wire Line
-	5550 2450 5500 2450
-Wire Wire Line
-	5550 2550 5500 2550
 Wire Wire Line
 	5500 2650 5550 2650
 $Comp
@@ -709,7 +690,7 @@ U 1 1 5F03A4BC
 P 4350 4750
 F 0 "H1" H 4536 4803 60  0000 L CNN
 F 1 "Hole" H 4536 4697 60  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965" H 4350 4750 60  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 4350 4750 60  0001 C CNN
 F 3 "" H 4350 4750 60  0001 C CNN
 	1    4350 4750
 	1    0    0    -1  
@@ -720,7 +701,7 @@ U 1 1 5F03ADC0
 P 5200 4750
 F 0 "H2" H 5386 4803 60  0000 L CNN
 F 1 "Hole" H 5386 4697 60  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965" H 5200 4750 60  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 5200 4750 60  0001 C CNN
 F 3 "" H 5200 4750 60  0001 C CNN
 	1    5200 4750
 	1    0    0    -1  
@@ -731,9 +712,28 @@ U 1 1 5F03BD3F
 P 6050 4750
 F 0 "H3" H 6236 4803 60  0000 L CNN
 F 1 "Hole" H 6236 4697 60  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965" H 6050 4750 60  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 6050 4750 60  0001 C CNN
 F 3 "" H 6050 4750 60  0001 C CNN
 	1    6050 4750
 	1    0    0    -1  
 $EndComp
+Text GLabel 4050 1950 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	5550 2450 5500 2450
+Wire Wire Line
+	5550 2550 5500 2550
+Text GLabel 5550 2650 2    50   Input ~ 0
+R2
+Text GLabel 5550 2550 2    50   Input ~ 0
+R1
+Text GLabel 5550 2450 2    50   Input ~ 0
+R0
+NoConn ~ 4100 2250
+NoConn ~ 4100 2150
+Text GLabel 5550 2350 2    50   Input ~ 0
+C0
+Wire Wire Line
+	5500 2350 5550 2350
+NoConn ~ 4100 2350
 $EndSCHEMATC
