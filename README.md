@@ -13,3 +13,21 @@ It's a straightforward design with a straightforward idea. I originally designed
 - MX Hot Swap
 - OLED Screen
 - Rotary Encoder
+- LEDS
+
+## Assembly 
+Note that source files only covers the PCB. Components must be assembled in order for the board to be used or completed.
+| Number of Parts | Component | Required |
+| ------------- | ------------- | ------------- |
+| 1 | Reset Switch |:heavy_check_mark: |  
+| 9 | MX switches |:heavy_check_mark: |  
+| 9 | Keycaps |:heavy_check_mark: |  
+| 1 | USB Cable  |:heavy_check_mark: |  
+| 1 | Pro Micro or Equivalent |:heavy_check_mark: |  
+| 1 | Bottom Plate |:heavy_check_mark: |  
+| 4 | Standoffs |:heavy_check_mark: |  
+| 4 | Screws |:heavy_check_mark: |  
+| 4 | LEDS |
+| 9 | Kailh MX Sockets |
+| 1 | Rotary Encoder |
+| 1 | OLED Display |
