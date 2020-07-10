@@ -23,7 +23,7 @@ Note that source files only covers the PCB. Components must be assembled in orde
 | 9 | MX switches |:heavy_check_mark: |  
 | 9 | Keycaps |:heavy_check_mark: |  
 | 1 | USB Cable  |:heavy_check_mark: | 
-| 9 | Diodes |:heavy_check_mark: | 
+| 10 | Diodes |:heavy_check_mark: | 
 | 1 | Pro Micro or Equivalent |:heavy_check_mark: |  
 | 1 | Bottom Plate |:heavy_check_mark: |  
 | 4 | Standoffs |:heavy_check_mark: |  
