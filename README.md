@@ -16,19 +16,18 @@ It's a straightforward design with a straightforward idea. I originally designed
 - LEDS
 
 ## Assembly 
-Note that source files only covers the PCB. Components must be assembled in order for the board to be used or completed.
-| Number of Parts | Component | Required |
+Note that source files only covers the PCB. Components must be assembled in order for the board to be functional or completed.
+| Number of Parts | Component | Description |
 | ------------- | ------------- | ------------- |
-| 1 | Reset Switch |:heavy_check_mark: |  
-| 9 | MX switches |:heavy_check_mark: |  
-| 9 | Keycaps |:heavy_check_mark: |  
-| 1 | USB Cable  |:heavy_check_mark: | 
-| 10 | Diodes |:heavy_check_mark: | 
-| 1 | Pro Micro or Equivalent |:heavy_check_mark: |  
-| 1 | Bottom Plate |:heavy_check_mark: |  
-| 4 | Standoffs |:heavy_check_mark: |  
-| 4 | Screws |:heavy_check_mark: |  
-| 4 | LEDS |
-| 9 | Kailh MX Sockets |
-| 1 | Rotary Encoder |
-| 1 | OLED Display |
+| 1 | USB Cable  | Depends on choice of microcontrollers |
+| 1 | Pro Micro or Equivalent | Microcontroller that features USB connectivity on-board |
+| 1 | Reset Switch | Switch to enter bootloader mode |
+| 10 | Diodes | standard switching signal diode | 
+| 9 | Kailh MX Sockets | Hot Swapping Sockets which can support MX switches |
+| 9 | MX switches | PCB supports PCB Mounted switches | 
+| 1 | Rotary Encoder | EC11, 5Pin, 6mm |
+| 9 | Keycaps | Any keycaps of choice |
+| 1 | Bottom Plate | PCB includes 4 mountaing whole that could fit M2 screws | 
+| 4 | LEDS | Individual WS2812B 5050 RGB LEDs|
+| 4 | 1x4 Connector | 4 pin male header|
+| 1 | OLED Display | 0.91 128×32 Display Module|
