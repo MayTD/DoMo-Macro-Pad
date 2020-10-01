@@ -26,7 +26,7 @@ Note that source files only covers the PCB. Components must be assembled in orde
 | 9 | MX switches | PCB supports PCB Mounted switches | 
 | 1 | Rotary Encoder | EC11, 5Pin, 6mm |
 | 9 | Keycaps | Any keycaps of choice |
-| 1 | Bottom Plate | PCB includes 4 mountaing whole that could fit M2 screws | 
+| 1 | Bottom Plate | PCB includes 4 mounting holes that could fit M2 screws | 
 | 4 | LEDS | Individual WS2812B 5050 RGB LEDs|
 | 4 | 1x4 Connector | 4 pin male header|
 | 1 | OLED Display | 0.91 128×32 Display Module|
